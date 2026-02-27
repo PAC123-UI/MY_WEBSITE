@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loader</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #2d4a7c, #1e3560);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .loader-container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            border-top: 6px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader-container" id="loader">
+        <h1>Please Wait</h1>
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        // Hide loader after 4 seconds
+        setTimeout(function() {
+            document.getElementById("loader").style.display = "none";
+        }, 4000);
+    </script>
+
+</body>
+</html>

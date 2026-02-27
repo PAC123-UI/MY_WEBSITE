@@ -1,69 +1,92 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lsn.css">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html>
 <head>
-    <title>Choose a Reason</title>
+    <title>Select Main Reason</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2d4a7c, #1e3560);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group {
+            max-height: 150px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            background: #ffffff;
+            color: #1e3560;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00e5ff;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-    <h2>Select the Main Reason</h2>
+    <div class="card">
+        <h2>Select the Main Reason</h2>
+        <p>Please choose only three reasons:</p>
 
-    <form action="submit.html" method="post">
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Poverty</label>
+            <label><input type="checkbox"> Lack of Skills</label>
+            <label><input type="checkbox"> Poor Health</label>
+            <label><input type="checkbox"> Lack of Capital</label>
+            <label><input type="checkbox"> Bad Leadership</label>
+            <label><input type="checkbox"> Corruption</label>
+            <label><input type="checkbox"> Lack of Technology</label>
+            <label><input type="checkbox"> Climate Change</label>
+            <label><input type="checkbox"> Population Growth</label>
+        </div>
 
-         <!-- Reason Section -->
-            <div class="reason-section">
-                <h3>Select the Main Reason</h3>
-                <p>Please choose only three reasons:</p>
-
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="reason"> Lack of Education</label>
-                    <label><input type="checkbox" name="reason"> Unemployment</label>
-                    <label><input type="checkbox" name="reason"> Poverty</label>
-                    <label><input type="checkbox" name="reason"> Lack of Skills</label>
-                    <label><input type="checkbox" name="reason"> Poor Health</label>
-                    <label><input type="checkbox" name="reason"> Lack of Capital</label>
-                    <label><input type="checkbox" name="reason"> Bad Leadership</label>
-                    <label><input type="checkbox" name="reason"> Corruption</label>
-                    <label><input type="checkbox" name="reason"> Lack of Technology</label>
-                    <label><input type="checkbox" name="reason"> Climate Change</label>
-                    <label><input type="checkbox" name="reason"> Population Growth</label>
-                    <label><input type="checkbox" name="reason"> Poor Infrastructure</label>
-                
-                </div>
-            </div>
-<a href="looder.html" class="btn">Submit</a>
-
-
-</a>
-        </form>
+       
+        <a href="loader.html"> <button>Submit</button></a>
     </div>
-</div>
 
-<script>
-    // Limit to 3 selections
-    const checkboxes = document.querySelectorAll('input[name="reason"]');
-    checkboxes.forEach(box => {
-        box.addEventListener('change', function() {
-            const checked = document.querySelectorAll('input[name="reason"]:checked');
-            if (checked.length > 3) {
-                this.checked = false;
-                alert("You can select only three reasons.");
-            }
-        });
-    });
-</script>
-
-
-</body>
-</html>
-    
 </body>
 </html>

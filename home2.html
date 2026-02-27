@@ -24,14 +24,12 @@
 
         <nav class="nav-links">
             <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Gallery</a>
-            <a href="#">About us</a>
-            <a href="#">Contact us</a>
+            <a href="#">Questions</a>
+            <a href="#">Courses</a>
         </nav>
 
         <div class="nav-button">
-            <a href="login.html" class="btn">Log in</a>
+            <a href="haje.html" class="btn">Join class</a>
         </div>
     </header>
 
@@ -42,50 +40,138 @@
             r a bright and successful future. We believe in discipline, respect, hard work, and innovation.</P>
     </div>
 
-    <h1>Find a course that's right for you</h1>
+    <div class="hh">
+ <h1>Find a course that's right for you</h1>
+    </div>
+   
+    
 
-<div class="container">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
 
-<div class="box active">
-    <h4>3 Courses</h4>
-    <h2>mathematics</h2>
+        .courses-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            background: #3f4fa0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .courses-count {
+            color: #ff8c00;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #3f4fa0;
+        }
+
+        /* Responsive */
+        @media(max-width: 992px){
+            .courses-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 600px){
+            .courses-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="courses-container">
+
+    <div class="card">
+        <div class="icon-circle"><i class="fas fa-brain"></i></div>
+        <div class="courses-count">3 Courses</div>
+        <div class="title">mathematics</div>
+    </div>
+
+    <div class="card">
+        <div class="icon-circle"><i class="fas fa-user"></i></div>
+        <div class="courses-count">6 Courses</div>
+        <div class="title">Digital Skills</div>
+    </div>
+
+    <div class="card">
+        <div class="icon-circle"><i class="fas fa-leaf"></i></div>
+        <div class="courses-count">Courses</div>
+        <div class="title">english</div>
+    </div>
+
+    <div class="card">
+        <div class="icon-circle"><i class="fas fa-book"></i></div>
+        <div class="courses-count">8 Courses</div>
+        <div class="title">Microsoft Digital Literacy</div>
+    </div>
+
+    <div class="card">
+        <div class="icon-circle"><i class="fas fa-trophy"></i></div>
+        <div class="courses-count">6 Courses</div>
+        <div class="title">Professional Skills</div>
+    </div>
+
+    <div class="card">
+        <div class="icon-circle"><i class="fas fa-comments"></i></div>
+        <div class="courses-count">8 Courses</div>
+        <div class="title">Social Skills</div>
+    </div>
+
+    <div class="card">
+        <div class="icon-circle"><i class="fas fa-graduation-cap"></i></div>
+        <div class="courses-count">1 Course</div>
+        <div class="title">Technical Content – Three Mountains</div>
+    </div>
+
+    <div class="card">
+        <div class="icon-circle"><i class="fas fa-briefcase"></i></div>
+        <div class="courses-count">10 Courses</div>
+        <div class="title">Business Courses</div>
+    </div>
+
 </div>
 
-<div class="box">
-    <h4>6 Courses</h4>
-    <h2>Digital Skills</h2>
-</div>
-
-<div class="box">
-    <h4>5 Courses</h4>
-    <h2>english</h2>
-</div>
-
-<div class="box">
-    <h4>4 Courses</h4>
-    <h2>creative and art</h2>
-</div>
-
-<div class="box">
-    <h4>2 Courses</h4>
-    <h2>art</h2>
-</div>
-
-<div class="box">
-    <h4>8 Courses</h4>
-    <h2>biology</h2>
-</div>
-
-<div class="box">
-    <h4>1 Course</h4>
-    <h2>Technical Content</h2>
-</div>
-
-<div class="box">
-    <h4>10 Courses</h4>
-    <h2>Business Courses</h2>
-</div>
-
+</body>
+</html>
 </div>
 <div class="cards-container">
         <div class="card">
@@ -170,9 +256,7 @@ the challenges of the future—from sustainable agriculture to advanced software
         <div class="footer-col brand-col">
             <img src="Blue White Modern school Logo.png" alt="SMART SWAMP" class="footer-logo">
             <p class="brand-description">
-                Immerse yourself in the rich history and culture of Ibere rya Bigogwe, 
-                where cows play a vital role in daily life and the local economy. 
-                Our goal is to provide visitors with an authentic Rwandan experience.
+            
             </p>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -187,11 +271,8 @@ the challenges of the future—from sustainable agriculture to advanced software
             <h3>LINKS</h3>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">Courses</a></li>
             </ul>
         </div>
 
@@ -206,7 +287,7 @@ the challenges of the future—from sustainable agriculture to advanced software
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 Ibere rya Bigogwe Ltd. All rights reserved. Designed with ❤️ by OSOPOX</p>
+        <p></p>
     </div>
 </footer>
 
