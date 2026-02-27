@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Swap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="login-container">
+  <h1>Smart Swap</h1>
+    <h2>Login</h2>
+
+    <div class="input-box">
+        <input type="text" required>
+        <label>Username</label>
+    </div>
+
+    <!-- School Code (numbers only) -->
+    <div class="input-box">
+        <input type="text" pattern="[0-9]*" inputmode="numeric" 
+        oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+        <label>School Code </label>
+    </div>
+
+    <div class="input-box">
+        <input type="password" required>
+        <label>Password</label>
+    </div>
+
+    <div class="links">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Create Account</a>
+    </div>
+
+    <button>Sign In</button>
+
+    <div class="bottom-text">
+        Already have an account? <a href="we.html">Sign Up</a>
+    </div>
+</div>
+
+</body>
+</html>

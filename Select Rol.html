@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Role</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.login-container {
+    width: 400px;
+    padding: 35px 40px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    animation: fadeIn 1.5s ease forwards;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+    width: 110px;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 15px;
+}
+
+.input-box select {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* White dropdown background */
+.input-box select option {
+    color: black;
+}
+
+.input-box label {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: white;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box select:focus ~ label,
+.input-box select:valid ~ label {
+    top: -15px;
+    font-size: 12px;
+    color: #00ffff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #2575fc;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #00ffff;
+    color: black;
+    transform: scale(1.05);
+}
+
+.bottom-text {
+    margin-top: 18px;
+    font-size: 14px;
+    color: white;
+}
+
+.bottom-text a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    animation: float 8s infinite;
+}
+
+.circle:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 15%;
+}
+
+.circle:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    bottom: 10%;
+    right: 10%;
+    animation-duration: 12s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-40px); }
+    100% { transform: translateY(0px); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="login-container">
+
+<img src="Blue White Modern school Logo.png" class="logo" alt="Smart Swap Logo">
+
+<h1>Smart Swap</h1>
+<h2>Login</h2>
+
+<div class="input-box">
+    <input type="text" required>
+    <label>Username</label>
+</div>
+
+
+<!-- SELECT ROLE ADDED -->
+<div class="input-box">
+    <select required>
+        <option value="" disabled selected></option>
+        <option>Student</option>
+        <option>Teacher</option>
+          </select>
+    <label>Select Role</label>
+</div>
+
+
+
+<a href="lsn.html"><button>Continue</button></a>
+
+</div>
+
+</body>
+</html>

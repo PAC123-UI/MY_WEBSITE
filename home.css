@@ -1,0 +1,501 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header{
+     font-family: "Vivaldi", "Edwardian Script ITC", "Lucida Calligraphy", cursive;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: uppercase; /* optional, if you want all caps */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* optional, similar shadow effect */
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    background-color: #f2f3e8; /* light background like image */
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0b7d4f;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #065f3a;
+}
+
+/* Button */
+.nav-button .btn {
+    background-color: #0b7d4f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-button .btn:hover {
+    background-color: #065f3a;
+}
+/* Remove default margin */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero background section */
+
+    /* Remove default spacing */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background image section */
+.body {
+    height: 100vh; /* full screen height */
+    background: url("ink.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Dark overlay */
+.body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Text styling */
+.body p {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px;
+}
+  
+
+
+
+/* Container */
+.container{
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+gap: 30px;
+
+padding: 20px;
+
+}
+
+
+/* Box style */
+.box{
+
+background: #f9f9f9;
+
+padding: 25px;
+
+border-radius: 20px;
+
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+transition: 0.3s;
+
+cursor: pointer;
+margin-top: 2%;
+
+}
+
+
+/* Hover effect */
+.box:hover{
+
+transform: translateY(-8px);
+
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+/* Course number */
+.box h4{
+
+color: orange;
+
+margin-bottom: 10px;
+
+}
+
+
+/* Course title */
+.box h2{
+
+color: #3f51b5;
+
+font-weight: bold;
+
+}
+
+
+/* Active box */
+.box.active{
+
+background: #4c5aa1;
+
+color: white;
+
+}
+
+
+.box.active h2,
+.box.active h4{
+
+color: white;
+
+}
+.box{
+
+background:#f5f5f5;
+padding:25px;
+border-radius:20px;
+
+}
+
+
+/* Add space between image and course boxes */
+.container {
+    margin-top: 40px; /* adds space */
+    padding: 20px; /* optional padding inside */
+    background-color: #f9f9f9; /* light background to separate visually */
+    border-radius: 10px; /* optional rounded corners */
+}
+
+/* Optional: make each course box a little separated */
+.container-box {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 9%;
+    background-color:burlywood;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1a4d2e;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.author {
+    font-size: 0.8rem;
+    color: #555;
+}
+/* General Page Styling */
+
+
+/* Flexbox Container */
+.container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 40px;               /* Space between image and text */
+    max-width: 1100px;
+    margin: 0 auto;          /* Centers the layout on the screen */
+    margin-top: 7%;
+}
+
+/* Image Styling */
+.image-section {
+    flex: 1;                 /* Takes up proportional space */
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 400px;        /* Limits image size */
+    border-radius: 25px;     /* Rounded corners as seen in image */
+    display: block;
+}
+
+/* Text Styling */
+.text-section {
+    flex: 2;                 /* Gives more room to the text */
+}
+
+.text-section h1 {
+    color: #1b7340;          /* The specific dark green color */
+    font-size: 2rem;
+    margin-top: 0;
+    line-height: 1.2;
+
+}
+
+.text-section p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: justify;     /* Optional: makes text edges straight */
+    margin-top: 10%;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks image on top of text on small screens */
+        padding: 20px;
+    }
+    
+    .image-section img {
+        max-width: 100%;
+    }
+}
+/* Center everything and set font */
+.partners-section {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+/* Call to Action Styling */
+.title {
+    font-size: 2.5rem;
+    color: #3b4d9b; /* Dark blue from the image */
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #f7a600; /* Yellow/Orange color */
+}
+
+.view-all-btn {
+    background-color: #3b4d9b;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px; /* Full capsule shape */
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+/* Partners Header */
+.partners-title {
+    color: #3b4d9b;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Flexbox Grid for Logos */
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* The Rounded Logo Cards */
+.partner-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 30px; /* Large rounded corners */
+    padding: 20px 40px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.partner-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.partner-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.main-footer {
+    background-color: #065f37; /* Dark Rwandan Green */
+    color: white;
+    padding: 60px 0 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+/* Brand Column */
+.footer-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.brand-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Links Column */
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+/* Newsletter Column */
+.newsletter-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.subscribe-btn {
+    background-color: #c0f4df; /* Light mint green from image */
+    color: #065f37;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #ffffff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #e0e0e0;
+}
